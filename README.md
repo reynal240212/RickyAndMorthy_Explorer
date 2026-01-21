@@ -1,52 +1,51 @@
-🛸 Rick & Morty Explorer
-Este proyecto es un explorador interactivo del multiverso de Rick & Morty construido con React y Vite. Permite consultar personajes, filtrar por temporadas y acceder a contenido de streaming optimizado para la región de Colombia.
+Rick & Morty Explorer
+This project is an interactive Rick & Morty multiverse explorer built with React and Vite. It allows users to browse characters, filter by seasons, and access streaming content optimized for the Latam/Colombia region.
 
-📋 Requisitos Previos
-Antes de comenzar, asegúrate de tener instalado:
+Prerequisites
+Before you begin, ensure you have the following installed:
 
-Node.js (Versión 18 o superior)
+Node.js (Version 18 or higher)
 
 Git
 
-⚙️ Manual de Instalación Local
-Sigue estos pasos en tu terminal para poner en marcha el portal interdimensional:
+Local Installation Guide
+Follow these steps in your terminal to launch the interdimensional portal:
 
-1. Clonar el repositorio
-Primero, descarga el código a tu computadora:
+1. Clone the repository
+First, download the code to your local machine:
 
 Bash
 git clone https://github.com/reynal240212/RickyAndMorthy_Explorer.git
 cd RickyAndMorthy_Explorer
-2. Instalar dependencias
-Usamos npm para gestionar las librerías necesarias (como React Router y Tailwind CSS):
+2. Install dependencies
+We use npm to manage the required libraries (such as React Router and Tailwind CSS):
 
 Bash
 npm install
-Nota: Este proceso creará la carpeta node_modules localmente.
+Note: This process will create the node_modules folder locally.
 
-3. Iniciar el servidor de desarrollo
-Ejecuta el siguiente comando para abrir la app en tu navegador:
+3. Start the development server
+Run the following command to open the app in your browser:
 
 Bash
 npm run dev
-La aplicación estará disponible en http://localhost:5173.
+The application will be available at http://localhost:5173.
 
-🚀 Despliegue (Deployment)
-Esta aplicación está configurada para desplegarse automáticamente en Vercel.
+Deployment
+This application is configured for automatic deployment on Vercel.
 
-Rutas: Incluye un archivo vercel.json para evitar errores 404 al recargar páginas como /characters o /episodes.
+Routing: Includes a vercel.json file to prevent 404 errors when refreshing single-page application (SPA) routes like /characters or /episodes.
 
-SEO: Los metadatos en el index.html están optimizados para compartir el link en redes sociales.
+SEO: Metadata in index.html is optimized for social media sharing and high-quality link previews.
 
-🛠️ Tecnologías Principales
+Tech Stack
 React 18 (Vite)
 
-Tailwind CSS (Diseño responsivo y futurista)
+Tailwind CSS (Responsive and futuristic UI/UX)
 
-Rick & Morty API (Consumo de datos vía REST/GraphQL)
+Rick & Morty API (Data fetching via REST/GraphQL)
 
-Vercel (Hosting y CI/CD)
+Vercel (Hosting and CI/CD)
 
-👨‍💻 Autor
-Reynaldo - Desarrollador Frontend
-
+Author
+Reynaldo - Frontend Developer
