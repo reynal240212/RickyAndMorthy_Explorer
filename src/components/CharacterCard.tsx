@@ -69,7 +69,7 @@ function CharacterCard({ id, name, image, species, status, compact = false }: Pr
             </span>
           </div>
 
-          {/* BOTÓN DE FAVORITO (Solo Tailwind SVG) */}
+          {/* BOTÓN DE FAVORITO  */}
           <button
             onClick={handleFavorite}
             className={`absolute bottom-3 right-3 p-2 rounded-xl border transition-all duration-300 backdrop-blur-md
