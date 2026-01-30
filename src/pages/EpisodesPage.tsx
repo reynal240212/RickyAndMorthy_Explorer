@@ -19,8 +19,7 @@ function EpisodesPage() {
     const fetchAllWithGraphQL = async () => {
       setLoading(true);
       
-      // Definimos la consulta: pedimos las páginas 1, 2 y 3 juntas
-      // O simplemente pedimos todos los episodios de una vez
+     
       const query = `
         query {
           episodesByIds(ids: [${Array.from({length: 51}, (_, i) => i + 1)}]) {
