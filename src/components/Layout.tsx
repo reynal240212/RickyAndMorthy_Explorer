@@ -23,12 +23,11 @@ function Layout({ children }: { children: React.ReactNode }) {
               { to: "/characters", label: "Characters" },
               { to: "/favorites", label: "Favorites" },
               { to: "/episodes", label: "Episodes" }
-
             ].map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
-                className={({ isActive }) =>
+                className={({ isActive }: { isActive: boolean }) =>
                   `font-medium transition ${isActive
                     ? "text-green-400"
                     : "text-gray-300 hover:text-green-400"
@@ -45,13 +44,7 @@ function Layout({ children }: { children: React.ReactNode }) {
 
       {/* HERO */}
       <section
-        className="
-    relative
-    h-[75vh] md:h-[85vh]
-    flex items-center justify-center
-    text-center px-6
-    bg-no-repeat bg-center bg-cover
-  "
+        className="relative h-[75vh] md:h-[85vh] flex items-center justify-center text-center px-6 bg-no-repeat bg-center bg-cover"
         style={{ backgroundImage: `url(${heroImage})` }}
       >
         {/* Overlay oscuro */}
@@ -59,22 +52,13 @@ function Layout({ children }: { children: React.ReactNode }) {
 
         {/* Glow verde tipo portal */}
         <div
-          className="
-      absolute inset-0
-      bg-[radial-gradient(circle_at_center,rgba(74,222,128,0.25),transparent_65%)]
-    "
+          className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(74,222,128,0.25),transparent_65%)]"
         />
 
         {/* Content */}
         <div className="relative z-10 max-w-3xl">
-          <h1
-            className="
-        text-4xl md:text-6xl font-extrabold mb-4
-        text-white
-        drop-shadow-[0_0_25px_rgba(74,222,128,0.7)]
-      "
-          >
-            Rick <span className="text bg-green-600drop-shadow-[0_0_30px_rgba(74,222,128,0.6)]">Explorer</span>
+          <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-white drop-shadow-[0_0_25px_rgba(74,222,128,0.7)]">
+            Rick <span className="text-green-400 drop-shadow-[0_0_30px_rgba(74,222,128,0.6)]">Explorer</span>
           </h1>
 
           <p className="text-gray-300 text-lg md:text-xl">
@@ -82,8 +66,6 @@ function Layout({ children }: { children: React.ReactNode }) {
           </p>
         </div>
       </section>
-
-
 
       {/* MAIN */}
       <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-10">
